@@ -1,0 +1,33 @@
+*{
+    margin: 0px ;
+    box-sizing:  border-box;
+}
+.contenedor{
+    width: 300px;
+    height: 200px;
+    border: 5px solid black;
+    margin: 100px auto;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border:  05px solid rgb(0, 0, 0);
+   
+}
+#caja1{ 
+    background-color: rgb(175, 24, 150);
+    position: static;
+    top: 200px;
+}
+#caja2{
+    background-color: aqua;
+}
+#caja4{
+    background-color: blueviolet;
+}
+#caja3{
+    background-color: chartreuse;
+}   

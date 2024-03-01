@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CS07</title>
+    <script>
+        console.log(`me ejecuto dentro del HTML`);
+    </script>
+</head>
+<body>
+    <!--Script interno-->
+    <script>
+        console.log(`me ejecuto dentro de body`);
+    </script>
+    <!--Script externo-->
+    
+    <main>
+        <article>
+            <h1 class="reset-color" onclick="handleTitle()" id="title">Sesion Web07</h1>
+            <p class="reset-color" onclick="changeColor('#FA8072')" id="description">A esta cohorte le gustan los elotes</p>
+        </article>
+        <article class="title-article">
+            <h2>Historia del elote</h2>
+            <p class="reset-color" onclick= "changeColorTextUsingThis('#CCCCFF', this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quas deserunt repellendus.</p>
+            <p class="reset-color" onclick= "changeColorTextUsingThis('brown', this)"> <strong>Penny</strong> prefiere en vaso(esquite)</p>
+            <p class="reset-color" onclick= "changeColorTextUsingThis('#39FF14', this)">El esquite de toda la vida</p>
+            <p class="reset-color" onclick= "changeColorTextUsingThis('#5D6D7E', this)">El esquite que le gusta a serch es el amarillo</p>
+        </article>
+    </main>
+    <!--Aquí es donde se recomienda poner los archivos JavaScript-->
+    <button onclick="resetParagraphColors()">Cambiar Párrafos</button>
+    <button onclick="resetTitleColors()">Cambiar Títulos</button>
+    <script src="./scrips.js"></script>
+</body>
+</html>

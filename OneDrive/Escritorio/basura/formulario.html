@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<link rel="icon" type="imag/x-icon" href="assets/img/taco.jpg" >
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio" class="boton">Inicio</a></li>
+                <li><a href="#nosotros" class="boton">Nosotros</a></li>
+                <li><a href="#contacto" class="boton">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="./assets/img/PERROLOGO.png" class="imagen-izquierda">
+        <h1 class="pedido-titulo">¡HAZ TU PEDIDO!</h1>
+        <form action="https://formsubmit.co/ingabrahamjv@gmail.com" method="POST">
+            <fieldset id="Datos Basicos">
+                <legend>Datos básicos</legend>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" placeholder="name" required name="nombre" id="nombre">
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" placeholder="tucorreo@correo.com" name="correo" id="email">
+                
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" name="telefono" required placeholder="tel" id="telefono">
+            </fieldset>
+            <fieldset id="Datos-envio">
+                <legend id="Datos envio">Datos del envío</legend>
+                <input type="radio" id="sucursal" name="envio" value="sucursal">
+                <label for="sucursal">Recoger en sucursal</label>
+                
+                <input type="radio" id="domicilio" name="envio" value="domicilio">
+                <label for="domicilio">Envío a domicilio</label>
+                
+                <input type="radio" id="punto_entrega" name="envio" value="punto_entrega">
+                <label for="punto_entrega">Punto de entrega</label>
+                
+                <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones">
+                <label for="terminos_condiciones">Acepto términos y condiciones</label>
+                
+                <input type="submit" value="Enviar">
+            </fieldset>
+            <fieldset id="Datos-pedido">
+                <legend>Datos del pedido</legend>
+                ¿Qué tipo de producto necesitas?
+                
+                <select name="tipo_taco">
+                    <option value="Tacos de Suadero">Tacos de suadero</option>
+                    <option value="Tacos de Alpastor">Tacos de Alpastor</option>
+                    <option value="Tacos Campechano">Taco Campechano</option>
+                    <option value="Tacos de Sal">Taco de Sal</option>
+                </select>
+                
+                <label for="cantidad_tacos">¿Cuántos tacos quieres?</label>
+                <input type="number" min="6" max="100" id="cantidad_tacos">
+                
+                <label for="fecha_evento">Fecha del evento</label>
+                <input type="date" id="fecha_evento">
+            </fieldset>
+            <fieldset id="Datos-pago">
+                <legend>Datos del pago</legend>
+                
+            </fieldset>
+            <input type="submit" value="Finalizado">
+        </form>
+    </main>
+</body>
+</html>
